@@ -121,6 +121,18 @@ def game():
 			print("uncorrect input. Use only 'paper','rock' or 'scissors'\n")
 		print("==== Next round! ==== #For exit press 'q'")
 
+def about_me():
+	s = '''    
+Hi! My name is CatBot. I was created to help my owner be in a good mood!
+I can play with you, tell you jokes, show latest news and even sing a
+karaoke, meow-meow :)
+
+v.1.0
+----------------------
+'''
+	print(s)
+	return 0
+
 ########## Start ###########
 
 print(
@@ -145,7 +157,8 @@ while choice != 'q':
     print("\n[1] Enter 1 to check latest Ukrainian news")
     print("[2] Enter 2 to play interesting game")
     print("[3] Enter 3 just to chat with me.")
-    print("[q] Enter q to quit.")
+    print("[a] Enter 'a' About me")
+    print("[q] Enter 'q' to quit.")
     
     choice = input("\nWhat would you like to do?\n")
     
@@ -159,8 +172,20 @@ while choice != 'q':
         print("\nIf you feel loneliness I'll try to help you, %s?\n" % name)
         chat()
     elif choice == 'q':
-        print("\nThanks for playing. See you later.\n")
+        print("\nSee you later!\n")
+    elif choice == 'a':
+    	about_me()
+    elif choice == 'drink':
+    	print("I drink only milk and recommend it to you, %s!" % name)
+    elif choice == 'damn it':
+    	print("God loves you, %s! Be patient!" % name)
+    elif choice == "catbot":
+    	print("Hello! It's me.")
+    elif choice == "sleep":
+    	print("Sweet dreams, %s!" % name)
+    elif choice == "eat":
+    	print("It's the most beautiful thing I like to do, %s!" % name)
     else:
-        print("\nI don't understand that choice, please try again.\n")
+        print("\nI don't understand. please try again.\n")
         
-print("Thanks again, bye now.")
+print("Bye, %s!" % name)
