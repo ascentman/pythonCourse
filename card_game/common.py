@@ -68,6 +68,20 @@ class Deck():
         for c in self.cards:
             print(c)
 
+class Player():
+    name = 'Guest'
+    def set_name(self, name):
+        self.name = input("Please, enter your name:\n")
+    def get_name(self):
+        print(self.name)
+
+    def get_cards(self):
+        
 
 k = Deck()
-k.print_cards()
+#k.print_cards()
+u = Player()
+u.get_name()
+u.set_name("Vasya")
+u.get_name()
+u.get_cards()

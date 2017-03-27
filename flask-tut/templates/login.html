@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>{{ title }} - microblog</title>
+  </head>
+  <body>
+  </body>
+  <br>
+  <form method = 'POST'>
+    <div><h2>{{ form.hidden_tag() }} </h2></div>
+    <div><h2>{{ form.username.label}} : {{ form.username }} </h2></div>
+    <div><h2>Password : {{ form.password }} </h2></div>
+    <input type ="submit" value = "Log in">
+    </form>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes> <font size="3" color="red">
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </font>
+    </ul>
+  {% endif %}
+{% endwith %}
+  </body>
+</html>

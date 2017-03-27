@@ -51,3 +51,6 @@ if __name__=='__main__':
     t4 = Timer("test4()", "from __main__ import test4")
     print("FILTER:")
     print(t4.timeit())
+
+    #list comprefension with if and without
+    #функція генератор
