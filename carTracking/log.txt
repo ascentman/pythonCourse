@@ -1,0 +1,52 @@
+05:38:05,560 werkzeug WARNING  * Debugger is active!
+05:38:05,582 werkzeug INFO  * Debugger pin code: 194-490-963
+05:58:33,204 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:58:33] "GET / HTTP/1.1" 200 -
+05:58:39,567 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:58:39] "GET /open/ HTTP/1.1" 200 -
+05:58:39,604 werkzeug ERROR Error on request:
+Traceback (most recent call last):
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 177, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+05:58:39,631 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:58:39] "GET /open/ HTTP/1.1" 200 -
+05:58:43,211 werkzeug ERROR Error on request:
+Traceback (most recent call last):
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 177, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+05:58:45,576 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:58:45] "GET /process/ HTTP/1.1" 200 -
+05:58:45,742 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:58:45] "GET /video_feed HTTP/1.1" 200 -
+05:58:47,32 root INFO New car detected: [250, 172, 76, 76]
+05:58:47,768 root INFO New car detected: [0, 500, 82, 82]
+05:59:00,211 root INFO New car detected: [608, 328, 76, 76]
+05:59:00,502 root INFO New car detected: [438, 316, 40, 40]
+05:59:00,978 root INFO New car detected: [1002, 486, 88, 88]
+05:59:04,130 root INFO New car detected: [90, 200, 52, 52]
+05:59:04,795 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:59:04] "GET /analyze HTTP/1.1" 200 -
+05:59:04,885 werkzeug ERROR Error on request:
+Traceback (most recent call last):
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 177, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe
+05:59:17,652 root INFO New car detected: [90, 200, 52, 52]
+05:59:17,679 werkzeug INFO 127.0.0.1 - - [12/Apr/2017 05:59:17] "GET /video_feed HTTP/1.1" 200 -
+05:59:18,470 werkzeug ERROR Error on request:
+Traceback (most recent call last):
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 205, in run_wsgi
+    execute(self.server.app)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 196, in execute
+    write(data)
+  File "/Users/user/anaconda/envs/py27/lib/python2.7/site-packages/werkzeug/serving.py", line 177, in write
+    self.wfile.write(data)
+IOError: [Errno 32] Broken pipe

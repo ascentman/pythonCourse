@@ -1,0 +1,17 @@
+<html>
+  <head>
+      <link rel= "stylesheet" type="text/css" href= "{{ url_for('static',filename='styles/main.css') }}">
+      <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>Processing</title>
+  </head>
+  <body>
+    <h1 align="center">Car detection program</h1>
+    <div class="container" align="center">
+    <img id="bg" src="{{ url_for('video_feed') }}">
+   </div>
+   <div class="container" align="center">
+    <br>
+    <a href="/analyze"><button class='btn btn-info btn-lg'>Analyze</button></a>
+   </div>
+  </body>
+</html>
